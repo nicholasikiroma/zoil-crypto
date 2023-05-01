@@ -1,0 +1,19 @@
+{
+  "name": "zoil-crypto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./static/src/input.css -o ./static/dist/css/output.css --minify",
+    "dev": "npx tailwindcss -i ./static/src/input.css -o ./static/dist/css/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  },
+  "dependencies": {
+    "flowbite": "^1.6.5"
+  }
+}

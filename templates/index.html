@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='dist/css/output.css')}}"
+    />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/zcash (1).png')}}" type="image/x-icon">
+    <title>ZoilXchange</title>
+  </head>
+
+  <body>
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a href="#" class="flex items-center">
+          <img
+            src="{{ url_for('static', filename='images/zcash (1).png')}}"
+            class="h-8 mr-3"
+            alt="Flowbite Logo"
+          />
+          <span
+            class="self-center text-xl tracking-wide font-semibold whitespace-nowrap dark:text-white"
+            >ZoilXchange</span
+          >
+        </a>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-6 h-6"
+            aria-hidden="true"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-white bg-primary-700 rounded md:bg-transparent md:text-primary-700 md:p-0 dark:text-white md:dark:text-primary-500"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-700 md:p-0 dark:text-white md:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Contact Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://wa.me/2347025358648"
+                class="focus:outline-none text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700"
+                >Buy Now</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      class="lg:bg-gradient-to-r to-primary-600 from-primary-400 sm:bg-primary-300 md:bg-primary-300 dark:bg-gray-900"
+    >
+      <div
+        class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12"
+      >
+        <div class="mr-auto place-self-center lg:col-span-7">
+          <h1
+            class="max-w-2xl mb-4 text-gray-800 text-2xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white"
+          >
+            Trade Cryptocurrencies and Gift Cards on the Go
+          </h1>
+          <p
+            class="max-w-2xl mb-6 font-light text-gray-700 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
+          >
+            Trade cryptocurrencies and exchange gift cards with ease using our
+            fast and secure mobile platform. Our platform makes it simple to buy
+            and sell a wide range of popular cryptocurrencies, including
+            Bitcoin, Ethereum, and Litecoin.
+          </p>
+          <a
+            href="#"
+            class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-800 hover:bg-gradient-to-r to-primary-600 from-sky-400 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+          >
+            Buy Now
+            <svg
+              class="w-5 h-5 ml-2 -mr-1"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </a>
+        </div>
+        <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+          <img
+            src="{{ url_for('static', filename='images/undraw_investor_update_re_qnuu.svg')}}"
+            alt="mockup"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white dark:bg-gray-900">
+      <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+        <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
+          <h2
+            class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+          >
+            Crypto at your fingertips
+          </h2>
+          <p
+            class="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400"
+          >
+            Our platform allows you to securely buy and sell all
+            cryptocurrencies (BTC, USDT, ETH, etc), and exchange all gift cards.
+          </p>
+        </div>
+        <div
+          class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0"
+        >
+          <div>
+            <div
+              class="flex justify-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900"
+            >
+              <svg
+                class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+                <path
+                  d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="mb-2 text-xl font-bold dark:text-white">Secure</h3>
+            <p class="text-gray-500 dark:text-gray-400">
+              Auto-assign tasks, send Slack messages, and much more. Now power
+              up with hundreds of new templates to help you get started.
+            </p>
+          </div>
+          <div>
+            <div
+              class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900"
+            >
+              <svg
+                class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z"
+                ></path>
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="mb-2 text-xl font-bold dark:text-white">
+              Swift Payment
+            </h3>
+            <p class="text-gray-500 dark:text-gray-400">
+              Audit-proof software built for critical financial operations like
+              month-end close and quarterly budgeting.
+            </p>
+          </div>
+          <div>
+            <div
+              class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900"
+            >
+              <svg
+                class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="mb-2 text-xl font-bold dark:text-white">
+              Borderless Transaction
+            </h3>
+            <p class="text-gray-500 dark:text-gray-400">
+              Craft beautiful, delightful experiences for both marketing and
+              product with real cross-company collaboration.
+            </p>
+          </div>
+        </div>
+        <div>
+          <a
+            href="https://wa.me/2347025358648"
+            class="inline-flex items-center mt-5 text-white bg-primary-700 hover:bg-gradient-to-r to-primary-600 from-sky-400 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900"
+          >
+            Get Started
+            <svg
+              class="ml-2 -mr-1 w-5 h-5"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white dark:bg-gray-900">
+      <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+        <div
+          class="max-w-screen-lg mb-8 text-gray-500 sm:text-lg dark:text-gray-400"
+        >
+          <h2
+            class="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white"
+          >
+            Exchange Crypto At The
+            <span class="text-primary-800">Best Rates</span>
+          </h2>
+          <p>
+            Buy and sell 250+ cryptocurrencies with 20+ fiat currencies using
+            bank transfers or your credit/debit card.
+          </p>
+
+          <script src="https://price-static.crypto.com/latest/public/static/widget/index.js"></script>
+          <div
+            id="crypto-widget-CoinBlocks"
+            data-design="modern"
+            data-coin-ids="1,166,136,382,1120,440,1986"
+          ></div>
+        </div>
+
+        <section class="bg-white dark:bg-gray-900">
+          <div
+            class="gap-5 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
+          >
+            <img
+              class="h-40 w-40 dark:hidden"
+              src="{{ url_for('static', filename='images/launch.png')}}"
+              alt="dashboard image"
+            />
+
+            <div class="mt-4 md:mt-0">
+              <h2
+                class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+              >
+                Trade. Anywhere.
+              </h2>
+              <p
+                class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400"
+              >
+                Start trading with safety and convenience.
+              </p>
+              <a
+                href="https://wa.me/2347025358648"
+                class="inline-flex items-center text-white bg-primary-700 hover:bg-gradient-to-r to-primary-600 from-sky-400 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900"
+              >
+                Trade Now
+                <svg
+                  class="ml-2 -mr-1 w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="bg-white dark:bg-gray-900">
+          <div
+            class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6"
+          >
+            <dl
+              class="grid max-w-screen-md gap-8 mx-auto text-gray-900 sm:grid-cols-3 dark:text-white"
+            >
+              <div class="flex flex-col items-center justify-center">
+                <dt class="mb-2 text-3xl md:text-4xl font-extrabold">67+</dt>
+                <dd class="font-light text-gray-500 dark:text-gray-400">
+                  Happy Customers
+                </dd>
+              </div>
+              <div class="flex flex-col items-center justify-center">
+                <dt class="mb-2 text-3xl md:text-4xl font-extrabold">230+</dt>
+                <dd class="font-light text-gray-500 dark:text-gray-400">
+                  Successful Trades
+                </dd>
+              </div>
+              <div class="flex flex-col items-center justify-center">
+                <dt class="mb-2 text-3xl md:text-4xl font-extrabold">50+</dt>
+                <dd class="font-light text-gray-500 dark:text-gray-400">
+                  Returning Customers
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </section>
+
+        <div
+          id=" default-carousel"
+          class="relative w-full mt-10"
+          data-carousel="slide"
+        >
+          <!-- Carousel wrapper -->
+          <div class="relative h-80 overflow-hidden rounded-lg md:h-96">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="{{ url_for('static', filename='images/itunes.png')}}"
+                class="absolute block w-80 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="{{ url_for('static', filename='images/steam.png')}}"
+                class="absolute block w-80 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="{{ url_for('static', filename='images/playstore.png')}}"
+                class="absolute block w-80 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+            <!-- Item 5 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="{{ url_for('static', filename='images/cashu.png')}}"
+                class="absolute block w-80 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+          </div>
+          <!-- Slider indicators -->
+          <div
+            class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2"
+          >
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="true"
+              aria-label="Slide 1"
+              data-carousel-slide-to="0"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 2"
+              data-carousel-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 3"
+              data-carousel-slide-to="2"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 4"
+              data-carousel-slide-to="3"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 5"
+              data-carousel-slide-to="4"
+            ></button>
+          </div>
+          <!-- Slider controls -->
+          <button
+            type="button"
+            class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev
+          >
+            <span
+              class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                aria-hidden="true"
+                class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"
+                ></path>
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next
+          >
+            <span
+              class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                aria-hidden="true"
+                class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                ></path>
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="bg-white dark:bg-gray-900">
+      <div class="py-8 lg:py-10 px-4 mx-auto max-w-screen-md">
+        <h2
+          class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white"
+        >
+          Contact Us
+        </h2>
+        <p
+          class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl"
+        >
+          Got a technical issue? Want to send feedback about a beta feature?
+          Need details about our Business plan? Let us know.
+        </p>
+        <a
+          href="https://wa.me/2347025358648"
+          class="inline-flex items-center text-white bg-primary-700 hover:bg-gradient-to-r to-primary-600 from-sky-400 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900"
+        >
+          Chat on WhatsApp
+          <svg
+            class="ml-2 -mr-1 w-5 h-5"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <div data-dial-init class="fixed right-6 bottom-6 group">
+      <div
+        id="speed-dial-menu-default"
+        class="flex flex-col items-center hidden mb-4 space-y-2"
+      >
+        <button
+          type="button"
+          data-tooltip-target="tooltip-download"
+          data-tooltip-placement="left"
+          class="flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-sm dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400"
+        >
+          <a href="https://wa.me/2347025358648">
+            <img
+              class="w-6 h-6"
+              aria-hidden="true"
+              src="{{ url_for('static', filename='images/whatsapp.png')}}"
+              alt=""
+            />
+          </a>
+          <span class="sr-only">WhatsApp</span>
+        </button>
+        <div
+          id="tooltip-download"
+          role="tooltip"
+          class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+        >
+          WhatsApp
+          <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+        <button
+          type="button"
+          data-tooltip-target="tooltip-copy"
+          data-tooltip-placement="left"
+          class="flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-sm dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400"
+        >
+          <img
+            class="w-6 h-6"
+            aria-hidden="true"
+            src="{{ url_for('static', filename='images/telegram.png')}}"
+            alt=""
+          />
+          <span class="sr-only">Telegram</span>
+        </button>
+        <div
+          id="tooltip-copy"
+          role="tooltip"
+          class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+        >
+          Telegram
+          <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+      </div>
+      <button
+        type="button"
+        data-dial-toggle="speed-dial-menu-default"
+        aria-controls="speed-dial-menu-default"
+        aria-expanded="false"
+        class="flex items-center justify-center text-white bg-primary-700 rounded-full w-10 h-10 hover:bg-primary-800 dark:bg-primary-600 dark:hover:bg-primary-700 focus:ring-4 focus:ring-primary-300 focus:outline-none dark:focus:ring-primary-800"
+      >
+        <svg
+          aria-hidden="true"
+          class="w-8 h-8 transition-transform group-hover:rotate-45"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+          ></path>
+        </svg>
+        <span class="sr-only">Open actions menu</span>
+      </button>
+    </div>
+
+    <footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
+      <div
+        class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"
+      >
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+          >© 2023
+          <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>.
+          All Rights Reserved.
+        </span>
+        <ul
+          class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0"
+        >
+          <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6">About</a>
+          </li>
+          <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6">Licensing</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+  </body>
+</html>
